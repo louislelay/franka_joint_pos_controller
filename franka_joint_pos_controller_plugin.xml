@@ -1,0 +1,9 @@
+<library path="lib/libfranka_joint_pos_controller">
+  <class name="franka_joint_pos_controller/JointPosController"
+         type="franka_joint_pos_controller::JointPosController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      Franka joint position controller
+    </description>
+  </class>
+</library>

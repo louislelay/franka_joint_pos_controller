@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find franka_control)/launch/franka_control.launch" pass_all_args="true"/>
+  <rosparam command="load" file="$(find franka_joint_pos_controller)/config/franka_joint_pos_controller.yaml" subst_value="true" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="joint_pos_controller"/>
+</launch>
